@@ -1,0 +1,191 @@
+#container {
+    width: 1000px;
+    /* border: 1px solid grey; */
+    margin: 50px auto;
+}
+
+#website_title a {
+    text-decoration: none;
+    font-size: 50px;
+    font-weight: 300;
+    font-family: serif;
+    color: #431c53;
+    float: left;
+}
+
+
+/* .carousel-item{
+    float: right;
+
+} */
+
+#header {
+    height: 100px;
+}
+
+#blank_div {
+    height: 25px;
+    width: auto;
+    background-color: yellow;
+}
+
+.carousel-item a {
+    text-decoration: none;
+    margin-top: 20px;
+    font-size: 30px;
+    font-weight: 300;
+    font-family: serif;
+    color: #301934;
+}
+
+#calculator {
+    margin-top: 20px;
+    border: 3px solid #191f45;
+    border-radius: 5px;
+    height: 306px;
+}
+
+#screen {
+    padding: 15px;
+    height: 300px;
+    width: 400px;
+    background-color: #F0F0F0;
+    border: 5px groove grey;
+    overflow: auto;
+    float: left;
+}
+
+#number_systems {
+    height: 270px;
+    /* border: 2px solid black; */
+    float: left;
+    width: 110px;
+    margin-right: 10px;
+}
+
+#number_systems button {
+    width: 100px;
+    margin: 3px;
+    height: 49px;
+    background-color: #4CAF50;
+    /* Green */
+    border: none;
+    color: white;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#numbers button {
+    width: 100px;
+    margin: 3px;
+    height: 49px;
+    background-color: #ccff00;
+    /* Green */
+    border: none;
+    color: balck;
+    /* padding: 15px 32px; */
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 20px;
+}
+
+#backspace {
+    background-image: image("images\backspace.png");
+}
+
+#numbers button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+    transform: translateX(1px);
+}
+
+#number_systems button:active {
+    background-color: #3e8e41;
+    box-shadow: 0 5px #666;
+    transform: translateY(1px);
+    transform: translateX(1px);
+}
+
+#keyboard {
+    float: right;
+    height: 300px;
+    width: 594px;
+    background-color: #FFCC00;
+    border: 5px groove black;
+    padding: 10px;
+}
+
+#website_creators {
+    padding: 10px;
+    float: right;
+    border: 3px solid #191f45;
+    border-radius: 5px;
+    background: linear-gradient(#E4F2B9, #B7E953);
+    margin-right: 10px;
+}
+
+#bg-modal {
+    height: 100%;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0px;
+    justify-content: center;
+    align-items: center;
+    display: none;
+}
+
+.openPopUp button {
+    border: 2px solid red;
+    border-radius: 5px;
+    margin-top: 25px;
+    margin-left: 400px;
+    padding: 10px;
+    font-size: 30px;
+    background-color: white;
+    transition-duration: 0.4s;
+}
+
+.popUp {
+    width: 500px;
+    height: 300px;
+    background-color: white;
+    border: 2px solid purple;
+    border-radius: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.icons_popup {
+    float: left;
+    height: 37px;
+    width: 37px;
+    margin-right: 15px;
+}
+
+.close {
+    position: absolute;
+    top: 185px;
+    left: 905px;
+    font-size: 50px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: rotate(45deg);
+}
+
+.important_links {
+    width: 400px;
+    height: auto;
+    /* margin: auto; */
+}
+
+#onscreen {
+    font-size: 25px;
+    overflow-wrap: break-word;
+}

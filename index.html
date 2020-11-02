@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+
+<head>
+    <meta charset="utf-8">
+    <title>Programming Calculator</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=yes">
+    <link rel="stylesheet" href="main.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+</head>
+
+<body>
+    <div id="container">
+        <div id="header">
+            <div id="website_title">
+                <h1><a href="#" title="Programming Calculator">Programming Calculator</a></h1>
+            </div>
+            <div id="website_creators">
+                <div id="carouselExampleInterval" class="carousel slide" data-ride="carousel">
+                    <div class="carousel-inner">
+                        <div class="carousel-item active" data-interval="5000">
+                            <a href="#">Abhishek Mule</a>
+                            <!-- <img src="images\AbhishekMule.jpg" class="d-block w-100"> -->
+                        </div>
+                        <div class="carousel-item" data-interval="2000">
+                            <a href="#">Nikhil Naudiyal</a>
+                            <!-- <img src="images\NikhilNaudiyal.jpg" class="d-block w-100"> -->
+                        </div>
+                        <div class="carousel-item">
+                            <a href="#">Captain Smarty Pants</a>
+                            <!-- <img src="images\aarnav.jpg" class="d-block w-100"> -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Header Complete -->
+        <div id="blank_div">
+        </div>
+        <div id="calculator">
+            <div id="screen">
+                <p id="onscreen">125.9999</p>
+            </div>
+            <div id="keyboard">
+                <div id="number_systems">
+
+                    <button type="button" name="backspace" onclick="backspace()">  &lt;-- </button>
+                    <button type="button" name="DEC" onclick="decimal_conversion()"> DEC </button>
+                    <button type="button" name="HEX" onclick="hex_conversion()"> HEX </button>
+                    <button type="button" name="OCT" onclick="octal_conversion()"> OCT </button>
+                    <button type="button" name="BIN" onclick="binary_conversion()"> BIN </button>
+                </div>
+                <div id="numbers">
+                    <button type="button" name="mod" onclick="modulus()"> % </button>
+                    <button type="button" name="log2" onclick="log_base2()"> ln<sub>2</sub> </button>
+                    <button type="button" name="pie" onclick="pie()"> &#928; </button>
+                    <button type="button" name="clearall" onclick="clearall()"> <strong>C</strong> </button>
+
+
+                    <button type="button" name="9" onclick="click_9()"> 9 </button>
+                    <button type="button" name="8" onclick="click_8()"> 8 </button>
+                    <button type="button" name="7" onclick="click_7()"> 7 </button>
+                    <button type="button" name="+" onclick="click_plus()"> + </button>
+
+
+                    <button type="button" name="6" onclick="click_6()"> 6 </button>
+                    <button type="button" name="5" onclick="click_5()"> 5 </button>
+                    <button type="button" name="4" onclick="click_4()"> 4 </button>
+                    <button type="button" name="-" onclick="click_minus()"> - </button>
+
+
+
+                    <button type="button" name="3" onclick="click_3()"> 3 </button>
+                    <button type="button" name="2" onclick="click_2()"> 2 </button>
+                    <button type="button" name="1" onclick="click_1()"> 1 </button>
+                    <button type="button" name="X" onclick="click_mul()"> X </button>
+
+
+
+                    <button type="button" name="point" onclick="click_point()"> . </button>
+                    <button type="button" name="0" onclick="click_0()"> 0 </button>
+                    <button type="button" name="divide" onclick="click_div()"> / </button>
+                    <button type="button" name="equal" onclick="click_equal()"> = </button>
+                </div>
+            </div>
+
+        </div>
+        <div class="openPopUp">
+            <button type="button" name="button" id="popUp_button" onclick="open_popup()">Click Me</button>
+        </div>
+    </div>
+    <!-- popUp -->
+    <div class="bg-modal" id="bg-modal">
+        <div class="popUp">
+            <div class="close" onclick="close_popup()">
+                +
+            </div>
+
+            <div class="important_links">
+                <a href="https://www.youtube.com/CodeinVeins">
+                    <img src="images\youtube.png" alt="" class="icons_popup"></a>
+                <h3>Support Us on YouTube </h3>
+                <br><br>
+                <a href="#">
+                    <img src="images\git.png" alt="" class="icons_popup"></a>
+                <h3>Click on git icon for Code </h3>
+            </div>
+        </div>
+    </div>
+    <script type="text/javascript" src="javascript\index.js">
+    </script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+</body>
+
+</html>
