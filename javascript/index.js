@@ -19,7 +19,7 @@ hex_dict["e"] = 14;
 hex_dict["f"] = 15;
 var pie_ = 3.1428
 var flag = 0;
-
+var log_flag = 0;
 
 
 function open_popup() {
@@ -55,6 +55,10 @@ function clearall() {
 
 // CLICKING NUMBERS
 function click_0() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     if ((onScreen == 0)) {
         onScreen = 0;
@@ -69,6 +73,10 @@ function click_0() {
 
 
 function click_1() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -81,6 +89,10 @@ function click_1() {
 }
 
 function click_2() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -94,6 +106,10 @@ function click_2() {
 
 
 function click_3() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -107,6 +123,10 @@ function click_3() {
 
 
 function click_4() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -120,6 +140,10 @@ function click_4() {
 
 
 function click_5() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -133,6 +157,10 @@ function click_5() {
 
 
 function click_6() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -146,6 +174,10 @@ function click_6() {
 
 
 function click_7() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -158,6 +190,10 @@ function click_7() {
 }
 
 function click_8() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -170,6 +206,10 @@ function click_8() {
 }
 
 function click_9() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
 
     if ((onScreen == 0)) {
@@ -182,6 +222,10 @@ function click_9() {
 }
 
 function click_point() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
     onScreen = onScreen.split(" ");
@@ -206,6 +250,10 @@ function click_point() {
 // NUMBER CONVERSIONS
 
 function binary_conversion() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     // if ((onScreen[-1] == '+') || (onScreen[-1] == '- ') || (onScreen[-1] == '* ') || (onScreen[-1] == '/ ')) {
     //     console.log(onScreen);
@@ -218,6 +266,10 @@ function binary_conversion() {
 }
 
 function octal_conversion() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     onScreen = Number(onScreen);
     document.getElementById('onscreen').innerHTML = onScreen.toString(8);
@@ -225,6 +277,10 @@ function octal_conversion() {
 }
 
 function hex_conversion() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     onScreen = Number(onScreen);
     document.getElementById('onscreen').innerHTML = onScreen.toString(16);
@@ -232,6 +288,10 @@ function hex_conversion() {
 }
 
 function decimal_conversion() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     if (onScreen.indexOf(".") != -1) {
         console.log("INN");
@@ -298,6 +358,10 @@ function decimal_conversion() {
 
 // OPERATORS
 function click_div() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     console.log("IN DIV");
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
@@ -325,6 +389,10 @@ function click_div() {
 }
 
 function click_minus() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     console.log("IN DIV");
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
@@ -352,6 +420,10 @@ function click_minus() {
 }
 
 function click_mul() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     console.log("IN DIV");
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
@@ -381,6 +453,10 @@ function click_mul() {
 
 
 function click_plus() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     console.log("IN DIV");
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
@@ -408,6 +484,10 @@ function click_plus() {
 }
 
 function modulus() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     console.log("IN DIV");
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen;
@@ -436,6 +516,10 @@ function modulus() {
 
 
 function pie() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     if (flag == 0) {
         window.alert("NOTE: There should be a operator between number & pie");
         flag = 1;
@@ -447,9 +531,22 @@ function pie() {
     document.getElementById('onscreen').innerHTML = final;
 }
 
+function log_base2() {
+    log_flag = 1;
+    var onScreen = document.getElementById('onscreen').innerHTML;
+    var final = "log<sub>2</sub>(" + onScreen + ") = " + Math.log2(onScreen);
+
+    document.getElementById('onscreen').innerHTML = final;
+}
+
 function click_equal() {
+    if (log_flag == 1) {
+        clearall();
+        log_flag = 0;
+    }
     var onScreen = document.getElementById('onscreen').innerHTML;
     var final = onScreen.split(" ");
     console.log(final);
+
     document.getElementById('onscreen').innerHTML = eval(onScreen);
 }
